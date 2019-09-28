@@ -11,29 +11,33 @@ var playlist = WaveformPlaylist.init({
     show: true, //whether or not to include the track controls
     width: 200 //width of controls in pixels
   },
-  zoomLevels: [500, 1000, 3000, 5000]
+  zoomLevels: [500, 1000, 3000, 5000, 500]
 });
 
 playlist.load([
   {
-    "src": "media/audio/Vocals30.mp3",
-    "name": "Jackman Music Vocals",
+    "src": "01923_CRT_SAW_BG/Soprano_02-01.mp3",
+    "name": "Soprano",
     "gain": 0.75,
     "muted": false,
     "soloed": false
   },
   {
-    "src": "media/audio/Guitar30.mp3",
-    "name": "Jackman Music Guitar"
+    "src": "01923_CRT_SAW_BG/Alto _02-01.mp3",
+    "name": "Alto"
   },
   {
-    "src": "media/audio/PianoSynth30.mp3",
-    "name": "Jackman Music Pianos & Synth",
+    "src": "01923_CRT_SAW_BG/Tenor _02-01.mp3",
+    "name": "Tenor",
     "gain": 1
   },
   {
-    "src": "media/audio/BassDrums30.mp3",
-    "name": "Jackman Music Drums"
+    "src": "01923_CRT_SAW_BG/Bass _02-01.mp3",
+    "name": "Bass"
+  },
+  {
+    "src": "01923_CRT_SAW_BG/Piano _02-01.mp3",
+    "name": "Piano"
   }
 ]).then(function() {
   //can do stuff with the playlist.
