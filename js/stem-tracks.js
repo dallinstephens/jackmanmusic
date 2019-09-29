@@ -24,20 +24,23 @@ playlist.load([
   },
   {
     "src": "01923_CRT_SAW_BG/Alto _02-01.mp3",
-    "name": "Alto"
+    "name": "Alto",
+    "gain": 0.75
   },
   {
     "src": "01923_CRT_SAW_BG/Tenor _02-01.mp3",
     "name": "Tenor",
-    "gain": 1
+    "gain": 0.75
   },
   {
     "src": "01923_CRT_SAW_BG/Bass _02-01.mp3",
-    "name": "Bass"
+    "name": "Bass",
+    "gain": 0.75
   },
   {
     "src": "01923_CRT_SAW_BG/Piano _02-01.mp3",
-    "name": "Piano"
+    "name": "Piano",
+    "gain": 0.75
   }
 ]).then(function() {
   //can do stuff with the playlist.

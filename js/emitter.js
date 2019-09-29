@@ -54,16 +54,16 @@ function cueFormatters(format) {
         return seconds.toFixed(3);
     },
     "hh:mm:ss": function (seconds) {
-        return clockFormat(seconds, 0);   
+        return clockFormat(seconds, 0);
     },
     "hh:mm:ss.u": function (seconds) {
-        return clockFormat(seconds, 1);   
+        return clockFormat(seconds, 1);
     },
     "hh:mm:ss.uu": function (seconds) {
-        return clockFormat(seconds, 2);   
+        return clockFormat(seconds, 2);
     },
     "hh:mm:ss.uuu": function (seconds) {
-        return clockFormat(seconds, 3);   
+        return clockFormat(seconds, 3);
     }
   };
 
