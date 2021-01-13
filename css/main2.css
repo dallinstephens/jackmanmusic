@@ -28,7 +28,7 @@
   .playlist .channel-wrapper.silent .channel {
     opacity: 0.3; }
   .playlist .controls {
-    background: red;
+    background: white;
     text-align: right; }
     .playlist .controls header {
       text-align: left;
