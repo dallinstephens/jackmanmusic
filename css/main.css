@@ -101,7 +101,7 @@
       height: 16px;
       width: 16px;
       border-radius: 50%;
-      background: #ffffff;
+      background: goldenrod;
       margin-top: -8px;
       cursor: ew-resize; }
     .playlist .controls input[type=range]::-moz-range-thumb {
