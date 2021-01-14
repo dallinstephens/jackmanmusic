@@ -28,7 +28,7 @@
 
 .playlist .controls { background: white; text-align: center; }
 
-.playlist .controls header { overflow: hidden; color: white; background-color: blueviolet; margin-bottom: 1em; height: 20px; }
+.playlist .controls header { overflow: hidden; color: white; background-color: crimson; margin-bottom: 1em; height: 20px; }
 
 .playlist .controls label { margin: 1em auto; width: 100%; display: inline-block; font: normal normal normal 14px/1 FontAwesome; font-size: inherit; text-rendering: auto; -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale; transform: translate(0, 0); }
 
@@ -42,7 +42,7 @@
 
 .playlist .controls input[type=range]::-moz-range-track { height: 8px; background: #ddd; border: none; border-radius: 3px; padding: 1px; }
 
-.playlist .controls input[type=range]::-webkit-slider-thumb { -webkit-appearance: none; -moz-appearance: none; appearance: none; border: none; height: 16px; width: 16px; border-radius: 50%; background: red; margin-top: -5px; cursor: ew-resize; }
+.playlist .controls input[type=range]::-webkit-slider-thumb { -webkit-appearance: none; -moz-appearance: none; appearance: none; border: none; height: 16px; width: 16px; border-radius: 50%; background: crimson; margin-top: -5px; cursor: ew-resize; }
 
 .playlist .controls input[type=range]::-moz-range-thumb { border: none; height: 16px; width: 16px; border-radius: 50%; background: goldenrod; margin-top: -5px; cursor: ew-resize; }
 
