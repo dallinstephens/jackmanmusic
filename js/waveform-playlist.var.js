@@ -118,7 +118,7 @@ var WaveformPlaylist =
 	      linkEndpoints: false,
 	      isContinuousPlay: false
 	    },
-	    isAutomaticScroll: true
+	    isAutomaticScroll: false
 	  };
 
 	  var config = (0, _lodash2.default)(defaults, options);
