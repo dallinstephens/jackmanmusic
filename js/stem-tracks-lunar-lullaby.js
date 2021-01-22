@@ -16,29 +16,29 @@ var playlist = WaveformPlaylist.init({
 
 playlist.load([
   {
-    "src": "01923_CRT_SAW_BG/Soprano_02-01.mp3",
+    "src": "https://dallinstephens.github.io/jackmanmusic/01923_CRT_SAW_BG/Soprano_02-01.mp3",
     "name": "Soprano",
     "gain": 0.75,
     "muted": false,
     "soloed": false
   },
   {
-    "src": "01923_CRT_SAW_BG/Alto _02-01.mp3",
+    "src": "https://dallinstephens.github.io/jackmanmusic/01923_CRT_SAW_BG/Alto _02-01.mp3",
     "name": "Alto",
     "gain": 0.75
   },
   {
-    "src": "01923_CRT_SAW_BG/Tenor _02-01.mp3",
+    "src": "https://dallinstephens.github.io/jackmanmusic/01923_CRT_SAW_BG/Tenor _02-01.mp3",
     "name": "Tenor",
     "gain": 0.75
   },
   {
-    "src": "01923_CRT_SAW_BG/Bass _02-01.mp3",
+    "src": "https://dallinstephens.github.io/jackmanmusic/01923_CRT_SAW_BG/Bass _02-01.mp3",
     "name": "Bass",
     "gain": 0.75
   },
   {
-    "src": "01923_CRT_SAW_BG/Piano _02-01.mp3",
+    "src": "https://dallinstephens.github.io/jackmanmusic/01923_CRT_SAW_BG/Piano _02-01.mp3",
     "name": "Piano",
     "gain": 0.75
   }
