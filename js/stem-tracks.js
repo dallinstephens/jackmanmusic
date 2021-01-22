@@ -29,12 +29,12 @@ playlist.load([
   },
   {
     "src": "https://firebasestorage.googleapis.com/v0/b/a-ccompany.appspot.com/o/accompany_online_access%2FLunar%20Lullaby%20-%20SA%2FLunar%20Lullaby%20SSAA%20Alto%201.mp3?alt=media&token=c889abd1-b309-4414-ae3d-59a1a1576bdd",
-    "name": Alto 1",
+    "name": "Alto 1",
     "gain": 0.75
   },
   {
     "src": "https://firebasestorage.googleapis.com/v0/b/a-ccompany.appspot.com/o/accompany_online_access%2FLunar%20Lullaby%20-%20SA%2FLunar%20Lullaby%20SSAA%20Alto%202.mp3?alt=media&token=1730d974-1a65-48ca-9ec5-e5ef61d09299",
-    "name": Alto 2",
+    "name": "Alto 2",
     "gain": 0.75
   },
   {
