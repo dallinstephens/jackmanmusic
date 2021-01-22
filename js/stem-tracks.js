@@ -16,29 +16,29 @@ var playlist = WaveformPlaylist.init({
 
 playlist.load([
   {
-    "src": "01923_CRT_SAW_BG/Soprano_02-01.mp3",
-    "name": "Soprano",
+    "src": "https://firebasestorage.googleapis.com/v0/b/a-ccompany.appspot.com/o/accompany_online_access%2FLunar%20Lullaby%20-%20SA%2FLunar%20Lullaby%20SSAA%20Soprano%201.mp3?alt=media&token=44a27ee1-d633-4dc7-b989-bee8c4a2319c",
+    "name": "SSAA Soprano 1",
     "gain": 0.75,
     "muted": false,
     "soloed": false
   },
   {
-    "src": "01923_CRT_SAW_BG/Alto _02-01.mp3",
-    "name": "Alto",
+    "src": "https://firebasestorage.googleapis.com/v0/b/a-ccompany.appspot.com/o/accompany_online_access%2FLunar%20Lullaby%20-%20SA%2FLunar%20Lullaby%20SSAA%20Soprano%202.mp3?alt=media&token=fd2f14e3-aee5-4444-91ff-af83f8caa905",
+    "name": "SSAA Soprano 2",
     "gain": 0.75
   },
   {
-    "src": "01923_CRT_SAW_BG/Tenor _02-01.mp3",
-    "name": "Tenor",
+    "src": "https://firebasestorage.googleapis.com/v0/b/a-ccompany.appspot.com/o/accompany_online_access%2FLunar%20Lullaby%20-%20SA%2FLunar%20Lullaby%20SSAA%20Alto%201.mp3?alt=media&token=c889abd1-b309-4414-ae3d-59a1a1576bdd",
+    "name": Alto 1",
     "gain": 0.75
   },
   {
-    "src": "01923_CRT_SAW_BG/Bass _02-01.mp3",
-    "name": "Bass",
+    "src": "https://firebasestorage.googleapis.com/v0/b/a-ccompany.appspot.com/o/accompany_online_access%2FLunar%20Lullaby%20-%20SA%2FLunar%20Lullaby%20SSAA%20Alto%202.mp3?alt=media&token=1730d974-1a65-48ca-9ec5-e5ef61d09299",
+    "name": Alto 2",
     "gain": 0.75
   },
   {
-    "src": "01923_CRT_SAW_BG/Piano _02-01.mp3",
+    "src": "https://firebasestorage.googleapis.com/v0/b/a-ccompany.appspot.com/o/accompany_online_access%2FLunar%20Lullaby%20-%20SA%2FLunar%20Lullaby%20SSAA%20Piano.mp3?alt=media&token=bf52eaea-f836-4b6a-9972-6eb4cbd223c3",
     "name": "Piano",
     "gain": 0.75
   }
