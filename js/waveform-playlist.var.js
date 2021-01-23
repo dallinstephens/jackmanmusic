@@ -118,7 +118,7 @@ var WaveformPlaylist =
 	      linkEndpoints: false,
 	      isContinuousPlay: false
 	    },
-	    isAutomaticScroll: true
+	    isAutomaticScroll: false
 	  };
 
 	  var config = (0, _lodash2.default)(defaults, options);
@@ -1608,7 +1608,7 @@ var WaveformPlaylist =
 	    this.masterGain = 1;
 	    this.annotations = [];
 	    this.durationFormat = 'hh:mm:ss.uuu';
-	    this.isAutomaticScroll = true;
+	    this.isAutomaticScroll = false;
 	    this.resetDrawTimer = undefined;
 	  }
 
