@@ -1608,7 +1608,7 @@ var WaveformPlaylist =
 	    this.masterGain = 1;
 	    this.annotations = [];
 	    this.durationFormat = 'hh:mm:ss.uuu';
-	    this.isAutomaticScroll = true;
+	    this.isAutomaticScroll = false;
 	    this.resetDrawTimer = undefined;
 	  }
 
