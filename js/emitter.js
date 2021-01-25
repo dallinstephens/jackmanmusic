@@ -280,7 +280,7 @@ $container.on("change", ".link-endpoints", function(e){
   ee.emit("linkendpoints", $(e.target).is(':checked'));
 });
 
-alert(ee.emit("automaticscroll", $(e.target).is(':checked')));
+alert(automaticscroll);
 
 $container.on("change", ".automatic-scroll", function(e){
   ee.emit("automaticscroll", $(e.target).is(':checked'));
