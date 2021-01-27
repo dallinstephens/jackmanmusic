@@ -1,3 +1,37 @@
+.load-box {
+  position: absolute;
+  z-index: 10;
+  top: 30%;
+  left: 0;
+  right: 0;
+  margin-left: auto; 
+  margin-right: auto;   
+  padding: 15px 0px;
+  width: 40%;
+  background-color: white;
+  box-shadow: 0 0 5px #888888;
+}
+
+.closebtn {
+  margin-left: 15px;
+  padding: 7px 5px;
+  color: grey;
+  font-weight: bold;
+  float: right;
+  font-size: 25px;
+  line-height: 20px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.closebtn:hover {
+  color: crimson;
+}
+
+.w3-red {
+  background-color: #ee3041 !important;
+}
+
 .playlist { margin: 2em 0; }
 
 .playlist .playlist-time-scale { height: 30px; }
