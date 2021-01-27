@@ -1,7 +1,10 @@
-var playlist = WaveformPlaylist.init({
+import WaveformPlaylist from 'waveform-playlist';
+
+var playlist = WaveformPlaylist({
   samplesPerPixel: 1000,
   waveHeight: 100,
   container: document.getElementById("playlist"),
+  isAutomaticScroll: true,
   timescale: true,
   state: 'cursor',
   colors: {
@@ -35,4 +38,3 @@ playlist.load([
 ]).then(function() {
   //can do stuff with the playlist.
 });
-
