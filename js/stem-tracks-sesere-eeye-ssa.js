@@ -2,6 +2,7 @@ var playlist = WaveformPlaylist.init({
   samplesPerPixel: 1000,
   waveHeight: 100,
   container: document.getElementById("playlist"),
+  isAutomaticScroll: true,
   timescale: true,
   state: 'cursor',
   colors: {
@@ -13,13 +14,6 @@ var playlist = WaveformPlaylist.init({
   },
   zoomLevels: [500, 1000, 3000, 5000, 500]
 });
-
-var playlist = WaveformPlaylist(
-  {
-    container: document.getElementById("playlist"),
-    isAutomaticScroll: true
-  }
-);
 
 playlist.load([
   {
