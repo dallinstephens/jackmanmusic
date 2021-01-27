@@ -10,10 +10,9 @@ var playlist = WaveformPlaylist.init({
   controls: {
     show: true, //whether or not to include the track controls
     width: 200 //width of controls in pixels
-  },
-  zoomLevels: [500, 1000, 3000, 5000],
-  // Whether to automatically scroll the waveform while playing
-  isAutomaticScroll: true  
+  },   
+  isAutomaticScroll: true, // Whether to automatically scroll the waveform while playing
+  zoomLevels: [500, 1000, 3000, 5000]  
 });
 
 playlist.load([
