@@ -14,13 +14,6 @@ var playlist = WaveformPlaylist.init({
   zoomLevels: [500, 1000, 3000, 5000, 500]
 });
 
-var options = {
-  {
-    container: document.getElementById("playlist"),
-    isAutomaticScroll: true
-  }
-);
-
 playlist.load([
   {
     "src": "SesereEeye_MO_CRT_SSA/Sesere%20Eeye%20Melody.mp3",
