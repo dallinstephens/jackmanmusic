@@ -19,7 +19,7 @@
   <link rel="alternate" type="application/rss+xml" title="Waveform Playlist" href="https://naomiaro.github.io/waveform-playlist/feed.xml">
 </head>
 
-  <body>
+  <body onload="move();">
 
     <header class="site-header">
 
@@ -84,6 +84,26 @@
 
     </script>
 
+    <script>
+      function move() {
+        var elem = document.getElementById("myBar");   
+        var width = 0;
+        var id = setInterval(frame, 700);
+        function frame() {
+          if (width >= 100) {
+            clearInterval(id);
+          } else {
+            width++; 
+            elem.style.width = width + '%'; 
+            elem.innerHTML = width * 1  + '%';
+          }
+        }
+      }
+
+      /* Multiply setInterval time by 100 and then add 5000. */
+      setTimeout(function(){ document.getElementById("load-box").style.display="none"; }, 75000); 
+    </script>    
+    
   </body>
 
 </html>
