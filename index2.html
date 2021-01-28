@@ -1,1 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
 
+  <head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta property="og:image" content="https://raw.githubusercontent.com/naomiaro/waveform-playlist/master/img/stemtracks.png">
+  <meta property="og:image:height" content="401">
+  <meta property="og:image:width" content="1039">
+
+  <title>Jackman Music Stem Tracks</title>
+  <meta name="description" content="Create a playlist with multiple stem tracks. Mute, solo, or set different volume levels for each audio track. Multitrack scheduling audio simultaneous playback. Master volume adjustment.">
+
+  <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+  <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" />
+  <link rel="stylesheet" href="css/main.css">
+  <link rel="canonical" href="https://naomiaro.github.io/waveform-playlist/index.html">
+  <link rel="alternate" type="application/rss+xml" title="Waveform Playlist" href="https://naomiaro.github.io/waveform-playlist/feed.xml">
+</head>
+
+  <body onload="move();">
+
+    <header class="site-header">
+
+</header>
+    
+<div id="load-box" class="load-box">
+  <div class="w3-container">
+      <span class="closebtn" onclick="this.parentElement.parentElement.style.display='none';">&times;</span>
+      <h5><b>Loading... Thank you for your patience!</b></h5>
+
+      <div class="w3-light-grey">
+          <div id="myBar" class="w3-container w3-red" style="width:0">0%</div>
+      </div>
+  </div>
+</div>    
+
+<div class="container">
+  <div class="wrapper">
+    <article class="post">
+      <div class="post-content">
+        <div id="playlist"></div>
+        <div id="top-bar" class="playlist-top-bar">
+          <div class="playlist-toolbar">
+            <div class="btn-group">
+              <span class="btn-rewind btn"><i class="fa fa-fast-backward"></i></span>
+              <span class="btn-pause btn"><i class="fa fa-pause"></i></span>
+              <span class="btn-play btn"><i class="fa fa-play"></i></span>
+              <span class="btn-stop btn"><i class="fa fa-stop"></i></span>
+              <span class="btn-fast-forward btn"><i class="fa fa-fast-forward"></i></span>
+            </div>
+            <span class="audio-pos">00:00:00.0</span>
+          </div>
+        </div>
+        <form class="form-inline">
+          <div class="form-group">
+            <label for="master-gain">Master Volume</label>
+            <input type="range" min="0" max="100" value="100" class="master-gain form-control" id="master-gain">
+          </div>
+          <div class="checkbox">
+            <label>
+              <input type="checkbox" class="automatic-scroll"> Automatic Scroll
+            </label>
+          </div>
+        </form>
+      </div>
+    </article>
+  </div>
+</div>
+
+<footer class="well well-lg">
+
+  <p></p>
+  <p></p>
+  <p></p>
+  <p class="copyright">waveform-playlist maintained by <a href="https://github.com/naomiaro">naomiaro</a></p>
+  <p>Licensed under the MIT License</p>
+</footer>
+
+<script src="//code.jquery.com/jquery-2.1.4.min.js"></script>
+<script type="text/javascript" src="js/waveform-playlist.var.js"></script>
+<script type="text/javascript" src="js/stem-tracks-test.js"></script>
+<script type="text/javascript" src="js/emitter.js"></script>
+
+
+    <script>
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+      ga('create', 'UA-62186746-1', 'auto');
+      ga('send', 'pageview');
+
+    </script>
+
+    <script>
+      function move() {
+        var elem = document.getElementById("myBar");   
+        var width = 0;
+        var id = setInterval(frame, 700);
+        function frame() {
+          if (width >= 100) {
+            clearInterval(id);
+          } else {
+            width++; 
+            elem.style.width = width + '%'; 
+            elem.innerHTML = width * 1  + '%';
+          }
+        }
+      }
+
+      /* Multiply setInterval time by 100 and then add 5000. */
+      setTimeout(function(){ document.getElementById("load-box").style.display="none"; }, 75000); 
+    </script>    
+    
+  </body>
+
+</html>
