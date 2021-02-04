@@ -36,3 +36,28 @@ playlist.load([
 ]).then(function() {
   //can do stuff with the playlist.
 });
+
+      {
+        "title": "Trumpet 1",
+        "filename": "TPT 1.01_20.mp3"
+      },
+      {
+        "title": "Trumpet 2",
+        "filename": "TPT 2.01_20.mp3"
+      },
+      {
+        "title": "Trumpet 3",
+        "filename": "TPT 3.01_20.mp3"
+      },
+      {
+        "title": "Trumpet 4",
+        "filename": "TPT 4.01_20.mp3"
+      },
+      {
+        "title": "Solo",
+        "filename": "SOLO.1.01_02.mp3"
+      },
+      {
+        "title": "Band",
+        "filename": "RS_S_B.01_20.mp3"
+      }
