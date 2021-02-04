@@ -36,3 +36,28 @@ playlist.load([
 ]).then(function() {
   //can do stuff with the playlist.
 });
+
+      {
+        "title": "Guitar",
+        "filename": "Guitar_05-41.mp3"
+      },
+      {
+        "title": "Piano",
+        "filename": "Piano _09-47.mp3"
+      },
+      {
+        "title": "Bass",
+        "filename": "Bass _04-78.mp3"
+      },
+      {
+        "title": "Drums",
+        "filename": "Drums_03-78.mp3"
+      },
+      {
+        "title": "Solo",
+        "filename": "Solo_02-78.mp3"
+      },
+      {
+        "title": "Band",
+        "filename": "Band No_01-78.mp3"
+      }
