@@ -17,47 +17,37 @@ var playlist = WaveformPlaylist.init({
 
 playlist.load([
   {
-    "src": "SesereEeye_MO_CRT_SSA/Sesere%20Eeye%20Melody.mp3",
-    "name": "Melody",
+    "src": "All%20of%20Me/Trombone/Trombone%201_04-06.mp3",
+    "name": "Trombone 1",
     "gain": 0.75,
     "muted": false,
     "soloed": false
   },
   {
-    "src": "SesereEeye_MO_CRT_SSA/Sesere%20Eeye%20Harmony%201.mp3",
-    "name": "Harmony 1",
+    "src": "All%20of%20Me/Trombone/Trombone%202_02-06.mp3",
+    "name": "Trombone 2",
     "gain": 0.75
   },
   {
-    "src": "SesereEeye_MO_CRT_SSA/Sesere%20Eeye%20Harmony%202.mp3",
-    "name": "Harmony 2",
+    "src": "All%20of%20Me/Trombone/Trombone%203_02-06.mp3",
+    "name": "Trombone 3",
+    "gain": 0.75
+  },
+  {
+    "src": "All%20of%20Me/Trombone/Trombone%204_02-06.mp3",
+    "name": "Trombone 4",
+    "gain": 0.75
+  },
+  {
+    "src": "All%20of%20Me/Trombone/Solo_02-06.mp3",
+    "name": "Solo",
+    "gain": 0.75
+  },  
+  {
+    "src": "All%20of%20Me/Trombone/Band%20No%20Bones_01-06.mp3",
+    "name": "Band",
     "gain": 0.75
   }
 ]).then(function() {
   //can do stuff with the playlist.
 });
-
-      {
-        "title": "Trombone 1",
-        "filename": "Trombone 1_04-06.mp3"
-      },
-      {
-        "title": "Trombone 2",
-        "filename": "Trombone 2_02-06.mp3"
-      },
-      {
-        "title": "Trombone 3",
-        "filename": "Trombone 3_02-06.mp3"
-      },
-      {
-        "title": "Trombone 4",
-        "filename": "Trombone 4_02-06.mp3"
-      },
-      {
-        "title": "Solo",
-        "filename": "Solo_02-06.mp3"
-      },
-      {
-        "title": "Band",
-        "filename": "Band No Bones_01-06.mp3"
-      }
