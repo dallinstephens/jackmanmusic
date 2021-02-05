@@ -40,4 +40,5 @@ playlist.load([
   }
 ]).then(function() {
   //can do stuff with the playlist.
+  document.getElementById("load-box").style.display="none"; // closes loading box with progress bar
 });
