@@ -48,6 +48,7 @@ playlist.load([
     "name": "Band",
     "gain": 0.75
   }
-]).then(function() {alert("Loaded!");
+]).then(function() {
   //can do stuff with the playlist.
+  document.getElementById("load-box").style.display="none"; // closes loading box with progress bar
 });
