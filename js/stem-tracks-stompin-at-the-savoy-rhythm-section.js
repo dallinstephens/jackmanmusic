@@ -17,48 +17,38 @@ var playlist = WaveformPlaylist.init({
 
 playlist.load([
   {
-    "src": "SesereEeye_MO_CRT_SSA/Sesere%20Eeye%20Melody.mp3",
-    "name": "Melody",
+    "src": "Stompin'%20at%20the%20Savoy/Rhythm%20Section/Guitar_05-41.mp3",
+    "name": "Guitar",
     "gain": 0.75,
     "muted": false,
     "soloed": false
   },
   {
-    "src": "SesereEeye_MO_CRT_SSA/Sesere%20Eeye%20Harmony%201.mp3",
-    "name": "Harmony 1",
+    "src": "Stompin'%20at%20the%20Savoy/Rhythm%20Section/Piano%20_09-47.mp3",
+    "name": "Piano",
     "gain": 0.75
   },
   {
-    "src": "SesereEeye_MO_CRT_SSA/Sesere%20Eeye%20Harmony%202.mp3",
-    "name": "Harmony 2",
+    "src": "Stompin'%20at%20the%20Savoy/Rhythm%20Section/Bass%20_04-78.mp3",
+    "name": "Bass",
+    "gain": 0.75
+  },
+  {
+    "src": "Stompin'%20at%20the%20Savoy/Rhythm%20Section/Drums_03-78.mp3",
+    "name": "Drums",
+    "gain": 0.75
+  },
+  {
+    "src": "Stompin'%20at%20the%20Savoy/Rhythm%20Section/Solo_02-78.mp3",
+    "name": "Solo",
+    "gain": 0.75
+  },  
+  {
+    "src": "Stompin'%20at%20the%20Savoy/Rhythm%20Section/Band%20No_01-78.mp3",
+    "name": "Band",
     "gain": 0.75
   }
 ]).then(function() {
   //can do stuff with the playlist.
   document.getElementById("load-box").style.display="none"; // closes loading box with progress bar
 });
-
-      {
-        "title": "Guitar",
-        "filename": "Guitar_05-41.mp3"
-      },
-      {
-        "title": "Piano",
-        "filename": "Piano _09-47.mp3"
-      },
-      {
-        "title": "Bass",
-        "filename": "Bass _04-78.mp3"
-      },
-      {
-        "title": "Drums",
-        "filename": "Drums_03-78.mp3"
-      },
-      {
-        "title": "Solo",
-        "filename": "Solo_02-78.mp3"
-      },
-      {
-        "title": "Band",
-        "filename": "Band No_01-78.mp3"
-      }
