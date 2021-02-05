@@ -17,51 +17,42 @@ var playlist = WaveformPlaylist.init({
 
 playlist.load([
   {
-    "src": "SesereEeye_MO_CRT_SSA/Sesere%20Eeye%20Melody.mp3",
-    "name": "Melody",
+    "src": "All%20of%20Me/Saxophone/Alto%201_05-06.mp3",
+    "name": "Alto 1",
     "gain": 0.75,
     "muted": false,
     "soloed": false
   },
   {
-    "src": "SesereEeye_MO_CRT_SSA/Sesere%20Eeye%20Harmony%201.mp3",
-    "name": "Harmony 1",
+    "src": "All%20of%20Me/Saxophone/Alto%202_02-06.mp3",
+    "name": "Alto 2",
     "gain": 0.75
   },
   {
-    "src": "SesereEeye_MO_CRT_SSA/Sesere%20Eeye%20Harmony%202.mp3",
-    "name": "Harmony 2",
+    "src": "All%20of%20Me/Saxophone/Tenor%201_03-06.mp3",
+    "name": "Tenor 1",
+    "gain": 0.75
+  },
+  {
+    "src": "All%20of%20Me/Saxophone/Tenor%202_02-06.mp3",
+    "name": "Tenor 2",
+    "gain": 0.75
+  },
+  {
+    "src": "All%20of%20Me/Saxophone/Bari_02-06.mp3",
+    "name": "Bari",
+    "gain": 0.75
+  },
+  {
+    "src": "All%20of%20Me/Saxophone/Solo_02-06.mp3",
+    "name": "Solo",
+    "gain": 0.75
+  },  
+  {
+    "src": "All%20of%20Me/Saxophone/Band%20No%20Sax_01-06.mp3",
+    "name": "Band",
     "gain": 0.75
   }
 ]).then(function() {
   //can do stuff with the playlist.
 });
-
-      {
-        "title": "Alto 1",
-        "filename": "Alto 1_05-06.mp3"
-      },
-      {
-        "title": "Alto 2",
-        "filename": "Alto 2_02-06.mp3"
-      },
-      {
-        "title": "Tenor 1",
-        "filename": "Tenor 1_03-06.mp3"
-      },
-      {
-        "title": "Tenor 2",
-        "filename": "Tenor 2_02-06.mp3"
-      },
-      {
-        "title": "Bari",
-        "filename": "Bari_02-06.mp3"
-      },
-      {
-        "title": "Solo",
-        "filename": "Solo_02-06.mp3"
-      },
-      {
-        "title": "Band",
-        "filename": "Band No Sax_01-06.mp3"
-      }
