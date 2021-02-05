@@ -17,47 +17,37 @@ var playlist = WaveformPlaylist.init({
 
 playlist.load([
   {
-    "src": "SesereEeye_MO_CRT_SSA/Sesere%20Eeye%20Melody.mp3",
-    "name": "Melody",
+    "src": "Don't%20Get%20Around%20Much%20Anymore/Trombone/BONE%201.01_20.mp3",
+    "name": "Trombone 1",
     "gain": 0.75,
     "muted": false,
     "soloed": false
   },
   {
-    "src": "SesereEeye_MO_CRT_SSA/Sesere%20Eeye%20Harmony%201.mp3",
-    "name": "Harmony 1",
+    "src": "Don't%20Get%20Around%20Much%20Anymore/Trombone/BONE%202.01_20.mp3",
+    "name": "Trombone 2",
     "gain": 0.75
   },
   {
-    "src": "SesereEeye_MO_CRT_SSA/Sesere%20Eeye%20Harmony%202.mp3",
-    "name": "Harmony 2",
+    "src": "Don't%20Get%20Around%20Much%20Anymore/Trombone/BONE%203.01_20.mp3",
+    "name": "Trombone 3",
+    "gain": 0.75
+  },
+  {
+    "src": "Don't%20Get%20Around%20Much%20Anymore/Trombone/BONE%204.01_20.mp3",
+    "name": "Trombone 4",
+    "gain": 0.75
+  },
+  {
+    "src": "Don't%20Get%20Around%20Much%20Anymore/Trombone/SOLO.1.01_02.mp3",
+    "name": "Solo",
+    "gain": 0.75
+  },  
+  {
+    "src": "Don't%20Get%20Around%20Much%20Anymore/Trombone/RS_S_T.01_20.mp3",
+    "name": "Band",
     "gain": 0.75
   }
 ]).then(function() {
   //can do stuff with the playlist.
 });
-
-      {
-        "title": "Trombone 1",
-        "filename": "BONE 1.01_20.mp3"
-      },
-      {
-        "title": "Trombone 2",
-        "filename": "BONE 2.01_20.mp3"
-      },
-      {
-        "title": "Trombone 3",
-        "filename": "BONE 3.01_20.mp3"
-      },
-      {
-        "title": "Trombone 4",
-        "filename": "BONE 4.01_20.mp3"
-      },
-      {
-        "title": "Solo",
-        "filename": "SOLO.1.01_02.mp3"
-      },
-      {
-        "title": "Band",
-        "filename": "RS_S_T.01_20.mp3"
-      }
