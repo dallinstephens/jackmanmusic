@@ -17,47 +17,37 @@ var playlist = WaveformPlaylist.init({
 
 playlist.load([
   {
-    "src": "SesereEeye_MO_CRT_SSA/Sesere%20Eeye%20Melody.mp3",
-    "name": "Melody",
+    "src": "Sing%2C%20Sing%2C%20Sing/Rhythm%20Section/GUIT.01_09.mp3",
+    "name": "Guitar",
     "gain": 0.75,
     "muted": false,
     "soloed": false
   },
   {
-    "src": "SesereEeye_MO_CRT_SSA/Sesere%20Eeye%20Harmony%201.mp3",
-    "name": "Harmony 1",
+    "src": "Sing%2C%20Sing%2C%20Sing/Rhythm%20Section/KEYS.01_09.mp3",
+    "name": "Piano",
     "gain": 0.75
   },
   {
-    "src": "SesereEeye_MO_CRT_SSA/Sesere%20Eeye%20Harmony%202.mp3",
-    "name": "Harmony 2",
+    "src": "Sing%2C%20Sing%2C%20Sing/Rhythm%20Section/BASS.01_09.mp3",
+    "name": "Bass",
+    "gain": 0.75
+  },
+  {
+    "src": "Sing%2C%20Sing%2C%20Sing/Rhythm%20Section/KIT.01_09.mp3",
+    "name": "Drums",
+    "gain": 0.75
+  },
+  {
+    "src": "Sing%2C%20Sing%2C%20Sing/Rhythm%20Section/SOLO.01_09.mp3",
+    "name": "Solo",
+    "gain": 0.75
+  },
+  {
+    "src": "Sing%2C%20Sing%2C%20Sing/Rhythm%20Section/S_B_T.01_09.mp3",
+    "name": "Band",
     "gain": 0.75
   }
-]).then(function() {
+]).then(function() {alert("Loaded!");
   //can do stuff with the playlist.
 });
-
-      {
-        "title": "Guitar",
-        "filename": "GUIT.01_09.mp3"
-      },
-      {
-        "title": "Piano",
-        "filename": "KEYS.01_09.mp3"
-      },
-      {
-        "title": "Bass",
-        "filename": "BASS.01_09.mp3"
-      },
-      {
-        "title": "Drums",
-        "filename": "KIT.01_09.mp3"
-      },
-      {
-        "title": "Solo",
-        "filename": "SOLO.01_09.mp3"
-      },
-      {
-        "title": "Band",
-        "filename": "S_B_T.01_09.mp3"
-      }
