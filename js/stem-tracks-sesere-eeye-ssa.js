@@ -33,6 +33,7 @@ playlist.load([
     "name": "Harmony 2",
     "gain": 0.75
   }
-]).then(function() {document.getElementById("load-box").style.display="none";
+]).then(function() {
   //can do stuff with the playlist.
+  document.getElementById("load-box").style.display="none"; // closes loading box with progress bar
 });
