@@ -17,47 +17,37 @@ var playlist = WaveformPlaylist.init({
 
 playlist.load([
   {
-    "src": "SesereEeye_MO_CRT_SSA/Sesere%20Eeye%20Melody.mp3",
-    "name": "Melody",
+    "src": "Sing%2C%20Sing%2C%20Sing/Trumpet/TPT%201.01_09.mp3",
+    "name": "Trumpet 1",
     "gain": 0.75,
     "muted": false,
     "soloed": false
   },
   {
-    "src": "SesereEeye_MO_CRT_SSA/Sesere%20Eeye%20Harmony%201.mp3",
-    "name": "Harmony 1",
+    "src": "Sing%2C%20Sing%2C%20Sing/Trumpet/TPT%202.01_09.mp3",
+    "name": "Trumpet 2",
     "gain": 0.75
   },
   {
-    "src": "SesereEeye_MO_CRT_SSA/Sesere%20Eeye%20Harmony%202.mp3",
-    "name": "Harmony 2",
+    "src": "Sing%2C%20Sing%2C%20Sing/Trumpet/TPT%203.01_09.mp3",
+    "name": "Trumpet 3",
+    "gain": 0.75
+  },
+  {
+    "src": "Sing%2C%20Sing%2C%20Sing/Trumpet/TPT%204.01_09.mp3",
+    "name": "Trumpet 4",
+    "gain": 0.75
+  },
+  {
+    "src": "Sing%2C%20Sing%2C%20Sing/Trumpet/SOLO.01_09.mp3",
+    "name": "Solo",
+    "gain": 0.75
+  },  
+  {
+    "src": "Sing%2C%20Sing%2C%20Sing/Trumpet/RS_S_B.01_09.mp3",
+    "name": "Band",
     "gain": 0.75
   }
 ]).then(function() {
   //can do stuff with the playlist.
 });
-
-      {
-        "title": "Trumpet 1",
-        "filename": "TPT 1.01_09.mp3"
-      },
-      {
-        "title": "Trumpet 2",
-        "filename": "TPT 2.01_09.mp3"
-      },
-      {
-        "title": "Trumpet 3",
-        "filename": "TPT 3.01_09.mp3"
-      },
-      {
-        "title": "Trumpet 4",
-        "filename": "TPT 4.01_09.mp3"
-      },
-      {
-        "title": "Solo",
-        "filename": "SOLO.01_09.mp3"
-      },
-      {
-        "title": "Band",
-        "filename": "RS_S_B.01_09.mp3"
-      }
