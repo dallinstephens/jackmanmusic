@@ -17,51 +17,42 @@ var playlist = WaveformPlaylist.init({
 
 playlist.load([
   {
-    "src": "SesereEeye_MO_CRT_SSA/Sesere%20Eeye%20Melody.mp3",
-    "name": "Melody",
+    "src": "Don't%20Get%20Around%20Much%20Anymore/Rhythm%20Section/GUIT.01_20.mp3",
+    "name": "Guitar",
     "gain": 0.75,
     "muted": false,
     "soloed": false
   },
   {
-    "src": "SesereEeye_MO_CRT_SSA/Sesere%20Eeye%20Harmony%201.mp3",
-    "name": "Harmony 1",
+    "src": "Don't%20Get%20Around%20Much%20Anymore/Rhythm%20Section/KEYS.01_20.mp3",
+    "name": "Piano",
     "gain": 0.75
   },
   {
-    "src": "SesereEeye_MO_CRT_SSA/Sesere%20Eeye%20Harmony%202.mp3",
-    "name": "Harmony 2",
+    "src": "Don't%20Get%20Around%20Much%20Anymore/Rhythm%20Section/BASS.01_20.mp3",
+    "name": "Bass",
+    "gain": 0.75
+  },
+  {
+    "src": "Don't%20Get%20Around%20Much%20Anymore/Rhythm%20Section/KIT.01_20.mp3",
+    "name": "Drums",
+    "gain": 0.75
+  },
+  {
+    "src": "Don't%20Get%20Around%20Much%20Anymore/Rhythm%20Section/PERC.1.01_03.mp3",
+    "name": "Vibes",
+    "gain": 0.75
+  },
+  {
+    "src": "Don't%20Get%20Around%20Much%20Anymore/Rhythm%20Section/SOLO.1.01_02.mp3",
+    "name": "Solo",
+    "gain": 0.75
+  },  
+  {
+    "src": "Don't%20Get%20Around%20Much%20Anymore/Rhythm%20Section/S_B_T.01_20.mp3",
+    "name": "Band",
     "gain": 0.75
   }
 ]).then(function() {
   //can do stuff with the playlist.
 });
-
-      {
-        "title": "Guitar",
-        "filename": "GUIT.01_20.mp3"
-      },
-      {
-        "title": "Piano",
-        "filename": "KEYS.01_20.mp3"
-      },
-      {
-        "title": "Bass",
-        "filename": "BASS.01_20.mp3"
-      },
-      {
-        "title": "Drums",
-        "filename": "KIT.01_20.mp3"
-      },
-      {
-        "title": "Vibes",
-        "filename": "PERC.1.01_03.mp3"
-      },
-      {
-        "title": "Solo",
-        "filename": "SOLO.1.01_02.mp3"
-      },
-      {
-        "title": "Band",
-        "filename": "S_B_T.01_20.mp3"
-      }
