@@ -17,51 +17,42 @@ var playlist = WaveformPlaylist.init({
 
 playlist.load([
   {
-    "src": "SesereEeye_MO_CRT_SSA/Sesere%20Eeye%20Melody.mp3",
-    "name": "Melody",
+    "src": "Don't%20Get%20Around%20Much%20Anymore/Saxophone/Alto%201.01_20.mp3",
+    "name": "Alto 1",
     "gain": 0.75,
     "muted": false,
     "soloed": false
   },
   {
-    "src": "SesereEeye_MO_CRT_SSA/Sesere%20Eeye%20Harmony%201.mp3",
-    "name": "Harmony 1",
+    "src": "Don't%20Get%20Around%20Much%20Anymore/Saxophone/Alto%202.01_20.mp3",
+    "name": "Alto 2",
     "gain": 0.75
   },
   {
-    "src": "SesereEeye_MO_CRT_SSA/Sesere%20Eeye%20Harmony%202.mp3",
-    "name": "Harmony 2",
+    "src": "Don't%20Get%20Around%20Much%20Anymore/Saxophone/Tenor%201.01_20.mp3",
+    "name": "Tenor 1",
+    "gain": 0.75
+  },
+  {
+    "src": "Don't%20Get%20Around%20Much%20Anymore/Saxophone/Tenor%202.01_20.mp3",
+    "name": "Tenor 2",
+    "gain": 0.75
+  },
+  {
+    "src": "Don't%20Get%20Around%20Much%20Anymore/Saxophone/Baritone.01_20.mp3",
+    "name": "Bari",
+    "gain": 0.75
+  },
+  {
+    "src": "Don't%20Get%20Around%20Much%20Anymore/Saxophone/SOLO.1.01_02.mp3",
+    "name": "Solo",
+    "gain": 0.75
+  },  
+  {
+    "src": "Don't%20Get%20Around%20Much%20Anymore/Saxophone/RS_B_T.01_20.mp3",
+    "name": "Band",
     "gain": 0.75
   }
 ]).then(function() {
   //can do stuff with the playlist.
 });
-
-      {
-        "title": "Alto 1",
-        "filename": "Alto 1.01_20.mp3"
-      },
-      {
-        "title": "Alto 2",
-        "filename": "Alto 2.01_20.mp3"
-      },
-      {
-        "title": "Tenor 1",
-        "filename": "Tenor 1.01_20.mp3"
-      },
-      {
-        "title": "Tenor 2",
-        "filename": "Tenor 2.01_20.mp3"
-      },
-      {
-        "title": "Bari",
-        "filename": "Baritone.01_20.mp3"
-      },
-      {
-        "title": "Solo",
-        "filename": "SOLO.1.01_02.mp3"
-      },
-      {
-        "title": "Band",
-        "filename": "RS_B_T.01_20.mp3"
-      }
