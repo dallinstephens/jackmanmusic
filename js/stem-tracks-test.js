@@ -227,7 +227,7 @@ var playlist = WaveformPlaylist.init({
 
 playlist.load([
   {
-    src: "media/audio/sonnet.mp3"
+    src: "SesereEeye_MO_CRT_SSA/Sesere%20Eeye%20Melody.mp3"
   }
 ]).then(function() {
   //can do stuff with the playlist.
