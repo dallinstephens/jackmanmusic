@@ -1,0 +1,256 @@
+<!doctype html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="IE=edge">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta property="og:image" content="https://raw.githubusercontent.com/naomiaro/waveform-playlist/master/img/stemtracks.png">
+    <meta property="og:image:height" content="401">
+    <meta property="og:image:width" content="1039">
+
+    <base href="https://dallinstephens.github.io/jackmanmusic/">
+    <meta name="description" content="Create a playlist with multiple stem tracks. Mute, solo, or set different volume levels for each audio track. Multitrack scheduling audio simultaneous playback. Master volume adjustment.">
+
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" />
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="canonical" href="https://naomiaro.github.io/waveform-playlist/index.html">
+    <link rel="alternate" type="application/rss+xml" title="Waveform Playlist" href="https://naomiaro.github.io/waveform-playlist/feed.xml">    
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    
+    <style>
+      .load-box {
+        position: absolute;
+        z-index: 10;
+        top: 30%;
+        left: 0;
+        right: 0;
+        margin-left: auto; 
+        margin-right: auto;   
+        padding: 15px 0px;
+        width: 40%;
+        background-color: white;
+        box-shadow: 0 0 5px #888888;
+      }
+
+      .closebtn {
+        margin-left: 15px;
+        padding: 7px 5px;
+        color: grey;
+        font-weight: bold;
+        float: right;
+        font-size: 25px;
+        line-height: 20px;
+        cursor: pointer;
+        transition: 0.3s;
+      }
+
+      .closebtn:hover {
+        color: #ee3041;
+      }
+
+      .w3-red {
+        background-color: #ee3041 !important;
+      }
+         
+      body {
+        margin: 0;
+        font-family: Arial, Helvetica, sans-serif;
+      }
+
+      .topnav {
+        margin-top: 20px;
+        overflow: hidden;
+        background-color: white;
+        box-shadow: 0 4px 2px -2px gray;  
+      }
+
+      .floating {
+        float: right;
+        height: 300px;
+        width: 400px;
+        border: 1px solid red;
+      }
+      .floating p {
+        vertical-align: middle; 
+        text-align: center;
+      }
+
+      .topnav a {
+        padding: 20px; 
+        float: left;
+        display: block;
+        color:: black;
+        text-align: center;
+        padding: 0px 16px;
+        text-decoration: none;
+        font-size: 17px;
+      }
+
+      .topnav a:hover {
+        background-color: #ee3041;
+        color: white;
+      }
+
+      .topnav .icon {
+        display: none;
+      }
+
+      @media screen and (max-width: 600px) {
+        .topnav a:not(:first-child) {display: none;}
+        .topnav a.icon {
+          float: right;
+          display: block;
+        }
+      }
+
+      @media screen and (max-width: 600px) {
+        .topnav.responsive {position: relative;}
+        .topnav.responsive .icon {
+          position: absolute;
+          right: 0;
+          top: 0;
+        }
+        .topnav.responsive a {
+          float: none;
+          display: block;
+          text-align: left;
+        }
+      }      
+    </style>    
+
+  </head>
+
+  <body onload="move();">
+
+    <div class="topnav" id="myTopnav">
+      <a style="vertical-align: middle; display: table-cell; height: 35px;" href="https://a-ccompany.com/collections/choir?page=2&grid_list=grid-view"><img style="max-height: 100%; display: block; margin: 0 auto;" src="https://cdn.shopify.com/s/files/1/1493/0818/files/A-ccompany_Horizontal_Logo_with_Name.jpg?v=1508212810" alt="A-ccompany Logo" width="auto" height="30"></a>
+      <a href="lunar-lullaby.html">Lunar Lullaby - SA</a>
+      <a href="sesere-eeye-ssa.html">Sesere Eeye - SSA</a>
+      <a href="one-song-satb.html">One Song - SATB</a>
+      <a href="homeward-bound-tbb.html">Homeward Bound - TBB</a>
+      <a href="flight-song-satb.html">Flight Song - SATB</a>
+      <a href="like-a-river-in-my-soul-satb.html">Like a River In My Soul - SATB</a>
+      <a href="three-quotes-by-mark-twain-sa.html">Three Quotes by Mark Twain - SA</a>     
+      <select onchange="location = this.value;">
+         <option selected disabled>All of Me</option> 
+         <option value="all-of-me-rhythm-section.html">Rhythm Section</option>
+         <option value="all-of-me-saxophone.html">Saxophone</option>
+         <option value="all-of-me-trombone.html">Trombone</option>
+         <option value="all-of-me-trumpet.html">Trumpet</option>         
+      </select>
+      <select onchange="location = this.value;">
+         <option selected disabled>Don't Get Around Much Anymore</option> 
+         <option value="dont-get-around-much-anymore-rhythm-section.html">Rhythm Section</option>
+         <option value="dont-get-around-much-anymore-saxophone.html">Saxophone</option>
+         <option value="dont-get-around-much-anymore-trombone.html">Trombone</option>
+         <option value="dont-get-around-much-anymore-trumpet.html">Trumpet</option>
+      </select>      
+      <select onchange="location = this.value;">
+         <option selected disabled>Sing, Sing, Sing</option> 
+         <option value="sing-sing-sing-rhythm-section.html">Rhythm Section</option>
+         <option value="sing-sing-sing-saxophone.html">Saxophone</option>
+         <option value="sing-sing-sing-trombone.html">Trombone</option>
+         <option value="sing-sing-sing-trumpet.html">Trumpet</option>
+      </select>      
+      <select onchange="location = this.value;">
+         <option selected disabled>Stompin' at the Savoy</option> 
+         <option value="stompin-at-the-savoy-rhythm-section.html">Rhythm Section</option>
+         <option value="stompin-at-the-savoy-saxophone.html">Saxophone</option>
+         <option value="stompin-at-the-savoy-trombone.html">Trombone</option>
+         <option value="stompin-at-the-savoy-trumpet.html">Trumpet</option>
+      </select>            
+      <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+        <i class="fa fa-bars"></i>
+      </a>
+    </div>   
+    
+    <div id="load-box" class="load-box">
+      <div class="w3-container">
+          <span class="closebtn" onclick="this.parentElement.parentElement.style.display='none';">&times;</span>
+          <h5><b>Loading... Thank you for your patience!</b></h5>
+          <p>If you see audio tracks, your page has loaded and you can close this box.</p>
+
+          <div class="w3-light-grey">
+              <div id="myBar" class="w3-container w3-red" style="width:0">0%</div>
+          </div>
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="wrapper">
+        <article class="post">
+          <div class="post-content">
+            <div id="playlist"></div>
+            <div id="top-bar" class="playlist-top-bar">
+              <div class="playlist-toolbar">
+                <div class="btn-group">
+                  <span class="btn-rewind btn"><i class="fa fa-fast-backward"></i></span>
+                  <span class="btn-pause btn"><i class="fa fa-pause"></i></span>
+                  <span class="btn-play btn"><i class="fa fa-play"></i></span>
+                  <span class="btn-stop btn"><i class="fa fa-stop"></i></span>
+                  <span class="btn-fast-forward btn"><i class="fa fa-fast-forward"></i></span>
+                </div>
+                <span class="audio-pos">00:00:00.0</span>
+              </div>
+            </div>
+            <form class="form-inline">
+              <div class="form-group">
+                <label for="master-gain">Master Volume</label>
+                <input type="range" min="0" max="100" value="100" class="master-gain form-control" id="master-gain">
+              </div>
+              <div class="checkbox">
+                <label>
+                  <input type="checkbox" class="automatic-scroll" checked> Automatic Scroll
+                </label>
+              </div>
+            </form>
+          </div>
+        </article>
+      </div>
+    </div>
+
+    <footer class="well well-lg">
+
+      <p></p>
+      <p></p>
+      <p></p>
+      <p class="copyright">waveform-playlist maintained by <a href="https://github.com/naomiaro">naomiaro</a></p>
+      <p>Licensed under the MIT License</p>
+    </footer>
+
+    <script src="//code.jquery.com/jquery-2.1.4.min.js"></script>
+    <script type="text/javascript" src="js/waveform-playlist.var.js"></script>
+    <script type="text/javascript" src="js/stem-tracks-stompin-at-the-savoy-trombone.js"></script>
+    <script type="text/javascript" src="js/emitter.js"></script>        
+    
+    <script>
+      function myFunction() {
+        var x = document.getElementById("myTopnav");
+        if (x.className === "topnav") {
+          x.className += " responsive";
+        } else {
+          x.className = "topnav";
+        }
+      }
+
+      function move() {
+        var elem = document.getElementById("myBar");   
+        var width = 0;
+        var id = setInterval(frame, 500);
+        function frame() {
+          if (width >= 100) {
+            width=0;
+            //clearInterval(id);
+          } else {
+            width++; 
+            elem.style.width = width + '%'; 
+            elem.innerHTML = width * 1  + '%';
+          }
+        }
+      }
+    </script>
+    
+</body>
+</html>
